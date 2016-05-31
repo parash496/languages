@@ -2,7 +2,7 @@
 <HTML>
 <head>
     <title> Languages </title>
-    <link rel="stylesheet"  href="../public/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="http://localhost/languages1/public/css/home.css" />
 </head>
 <body>
     <div class="container">
@@ -13,7 +13,7 @@
         <h1> MENU </h1>
 		    <?php for($i=0;$i<$array_length;$i++) { ?>
 		    <ul>
-		      <li><a href="index.php?controller=post&action=languages&subject=<?php echo ($array[$i]['name']) ?>"><?php echo $array[$i]['name']; ?></a></li>
+		      <li><a href="index.php?controller=language&action=languages&subject=<?php echo ($array[$i]['name']) ?>"><?php echo $array[$i]['name']; ?></a></li>
         </ul>
 		    <?php } ?>
       </section>  

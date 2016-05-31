@@ -1,22 +1,22 @@
 <?php
-require_once("../model/database.php");
+require_once(MODEL_PATH."languages_database.php");
 
 class LanguageController
 {
-	private $_database;
+	private $_languagedatabase;
 
 	function __construct() 
 	{
-       $this->_database = new MySQLDatabase();
+       $this->_languagedatabase = new languages_database();
    	}
 
 	public function languages()
 	{
 		$subject = $_REQUEST['subject'];
-      	$image_set = $this->_database->find_images($subject);   // image search from database.
-	  	$record_set = $this->_database->find_all_record_description($subject);  // Language discription search from database.
-	  	$link_set = $this->_database->find_all_social_link($subject);  // Social Link search from database.
-	  	$study_set = $this->_database->find_all_study_material($subject);  // Study Material search from database.
+      	$image_set = $this->_languagedatabase->find_images($subject);   // image search from database.
+	  	$record_set = $this->_languagedatabase->find_all_record_description($subject);  // Language discription search from database.
+	  	$link_set = $this->_languagedatabase->find_all_social_link($subject);  // Social Link search from database.
+	  	$study_set = $this->_languagedatabase->find_all_study_material($subject);  // Study Material search from database.
 	  
 	  	$array_image = []; 
 	  	while ($row_image = mysqli_fetch_assoc($image_set)) {
@@ -43,7 +43,7 @@ class LanguageController
       	$record_description = $array_record_set[0]['description'];		
 	  	$image_name = $array_image[0]['image_name'];
 	  	$record_name = $subject;
-      	require_once('../views/languages.php');
+      	require_once(VIEW_PATH."languages.php");
 	}
 }
 ?>    

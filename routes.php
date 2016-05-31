@@ -3,7 +3,7 @@
 function call($controller, $action) 
 {
   // require the file that matches the controller name
-  require_once("controller/".ucwords($controller) . "Controller.php");
+  require_once(CONTROLLER_PATH.ucwords($controller) . "Controller.php");
   switch ($controller) {
     case 'pages':
       $controller = new PagesController();

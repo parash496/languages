@@ -6,6 +6,6 @@ require_once("form_entry.php");
 <html>
 <head>
      <title> Languages </title>
-	 <link rel="stylesheet"  href="../public/css/main.css" />
+	 <link rel="stylesheet"  href="http://localhost/languages1/public/css/main.css" />
 </head>
 <body>

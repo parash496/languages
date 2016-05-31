@@ -1,13 +1,13 @@
 <?php
-require_once("../model/database.php");
+require_once(MODEL_PATH."home_database.php");
 
 class PagesController
 {
-private $_database;
+  private $_database;
 
   function __construct() 
   {
-    $this->_database = new MySQLDatabase();
+    $this->_database = new home_database();
   }
 
   public function home() 
@@ -18,8 +18,7 @@ private $_database;
       $array[] = $row;
     }
 	  $array_length = count($array);
-    require_once('../views/home_languages.php');
-  }
-	
+    require_once(VIEW_PATH."home_languages.php");
+  }	
 }
 ?>

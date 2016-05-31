@@ -1,5 +1,5 @@
 <?php
-require_once("database.php");
+require_once(MODEL_PATH."languages_database.php");
 
 if (isset($_POST['submit'])) { 
   // Often these are form values in $_POST

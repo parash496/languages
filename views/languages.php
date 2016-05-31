@@ -2,10 +2,10 @@
    
 <div class="container">
 	<header>
-	    <image src="../logo/<?php echo $image_name; ?>" class="logo" />
+	    <image src="http://localhost/languages1/public/logo/<?php echo $image_name; ?>" class="logo" />
 	        <nav class="nav">
 		    <ul>
-			   <li><a href="index.php"> HOME </a></li>
+			   <li><a href="http://localhost/languages1/index.php"> HOME </a></li>
 			   <li><a href=""> TUTORIAL </a></li>
 			   <li><a href=""> ABOUT </a></li>
 			   <li><a href=""> CONTACT </a></li>
