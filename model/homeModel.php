@@ -1,7 +1,7 @@
 <?php
 include("model.php");
 
-class homeModel extends MySQLDatabase
+class homeModel extends model
 {
 
 	public function find_record_name()

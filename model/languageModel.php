@@ -1,7 +1,7 @@
 <?php
 require_once("model.php");
 
-class languageModel extends MySQLDatabase
+class languageModel extends model
 {
 	
 	public function find_all_record_description($lang)

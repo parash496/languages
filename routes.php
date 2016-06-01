@@ -28,7 +28,7 @@ function call($controller, $action)
 $controllers = [
                   'pages' => ['home'],
                   'language'=>['languages'],
-                  'form'=>['entry'],
+                  'form'=>['enquiry'],
                   'errors'=>['error']
                ];
 

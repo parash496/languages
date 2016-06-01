@@ -1,7 +1,7 @@
 <?php
 require_once(CONFIG_PATH."config.php");
 
-class MySQLDatabase 
+class model 
 {
   private $_connection;
 

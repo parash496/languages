@@ -2,7 +2,7 @@
    
 <div class="container">
 	<header>
-	    <image src="http://localhost/languages1/public/logo/<?php echo $image_name; ?>" class="logo" />
+	    <image src="<?php echo LOGO_PATH; ?><?php echo $image_name; ?>" class="logo" />
 	        <nav class="nav">
 		    <ul>
 			   <li><a href="http://localhost/languages1/index.php"> HOME </a></li>
@@ -39,7 +39,7 @@
 			<?php } ?>
 		</div>
 		<div>
-		    <form action="index.php?controller=form&action=entry" method="post">
+		    <form action="index.php?controller=form&action=enquiry" method="post">
 			    <fieldset class="entries">
 				    <h2>ENQUIRY:</h2>
 				    <br><label for="first_name">First Name:</label> <input type="text" name="first_name"  id="first_name" /></br>

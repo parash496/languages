@@ -2,7 +2,7 @@
 <HTML>
 <head>
     <title> Languages </title>
-    <link rel="stylesheet" type="text/css" href="http://localhost/languages1/public/css/home.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo CSS_PATH; ?>home.css" />
 </head>
 <body>
     <div class="container">
