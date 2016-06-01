@@ -1,7 +1,7 @@
 <?php
 require_once("Model.php");
 
-class languageModel extends model
+class LanguageModel extends model
 {
 	
 	public function find_all_record_description($lang)
