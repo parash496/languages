@@ -3,18 +3,22 @@
 function call($controller, $action) 
 {
   // require the file that matches the controller name
-  require_once(CONTROLLER_PATH.ucwords($controller) . "Controller.php");
+  require_once(CONTROLLER_PATH.($controller) . "Controller.php");
   switch ($controller) {
     case 'pages':
-      $controller = new PagesController();
+      $controller = new pagesController();
       break;
 
     case 'language':
-      $controller = new LanguageController();
+      $controller = new languageController();
+      break;
+
+    case 'form':
+      $controller = new formController();
       break;
 
     case 'errors':
-      $controller = new ErrorController();
+      $controller = new errorsController();
       break;
   }      
   $controller->{ $action }();
@@ -24,6 +28,7 @@ function call($controller, $action)
 $controllers = [
                   'pages' => ['home'],
                   'language'=>['languages'],
+                  'form'=>['entry'],
                   'errors'=>['error']
                ];
 

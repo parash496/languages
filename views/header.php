@@ -1,5 +1,5 @@
 <?php
-require_once("form_entry.php");
+//require_once("form_entry.php");
 ?>
 
 <!DOCTYPE html>

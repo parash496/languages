@@ -1,10 +1,10 @@
 <?php
-include("main_database.php");
+include("model.php");
 
-class home_database extends MySQLDatabase
+class homeModel extends MySQLDatabase
 {
 
-	public function find_all_record()
+	public function find_record_name()
   	{
     	$sql = "SELECT name FROM record";
     	$record_set = $this->query($sql);

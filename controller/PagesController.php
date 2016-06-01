@@ -1,18 +1,18 @@
 <?php
-require_once(MODEL_PATH."home_database.php");
+require_once(MODEL_PATH."homeModel.php");
 
-class PagesController
+class pagesController
 {
   private $_database;
 
   function __construct() 
   {
-    $this->_database = new home_database();
+    $this->_database = new homeModel();
   }
 
   public function home() 
   {
-	  $record_set = $this->_database->find_all_record();
+	  $record_set = $this->_database->find_record_name();
     $array = [];
     while ($row = mysqli_fetch_assoc($record_set)) {
       $array[] = $row;

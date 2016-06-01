@@ -39,7 +39,7 @@
 			<?php } ?>
 		</div>
 		<div>
-		    <form action="form_entry.php" method="post">
+		    <form action="index.php?controller=form&action=entry" method="post">
 			    <fieldset class="entries">
 				    <h2>ENQUIRY:</h2>
 				    <br><label for="first_name">First Name:</label> <input type="text" name="first_name"  id="first_name" /></br>
