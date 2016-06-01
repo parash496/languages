@@ -7,7 +7,7 @@ class LanguageController
 
 	function __construct() 
 	{
-       $this->_database = new languageModel();
+       $this->_database = new LanguageModel();
    	}
 
 	public function languages()
