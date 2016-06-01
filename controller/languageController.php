@@ -1,5 +1,5 @@
 <?php
-require_once(MODEL_PATH."LanguageModel.php");
+require_once(MODEL_PATH."languageModel.php");
 
 class languageController
 {
