@@ -1,6 +1,6 @@
 <?php
 
-class errorsController
+class ErrorsController
 {
 	function __construct() 
 	{
