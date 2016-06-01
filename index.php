@@ -1,5 +1,4 @@
 <?php 
-<?php 
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 defined('CONFIG_PATH') ? null : define('CONFIG_PATH', 'C:'.DS.'wamp'.DS.'www'.DS.'languages1'.DS.'config'.DS);
 defined('MODEL_PATH') ? null : define('MODEL_PATH', 'C:'.DS.'wamp'.DS.'www'.DS.'languages1'.DS.'model'.DS);
