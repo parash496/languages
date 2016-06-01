@@ -1,7 +1,7 @@
 <?php
 require_once(MODEL_PATH."HomeModel.php");
 
-class pagesController
+class PagesController
 {
   private $_database;
 
