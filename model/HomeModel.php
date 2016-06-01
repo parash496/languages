@@ -1,5 +1,5 @@
 <?php
-include("model.php");
+include("Model.php");
 
 class homeModel extends model
 {
