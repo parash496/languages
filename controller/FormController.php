@@ -1,7 +1,7 @@
 <?php
 require_once(MODEL_PATH."LanguageModel.php");
 
-class formController
+class FormController
 {
   
   private $_database;
